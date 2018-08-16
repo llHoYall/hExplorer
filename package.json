@@ -1,0 +1,45 @@
+{
+  "name": "hexplorer",
+  "description": "HoYa's file explorer application with electron",
+  "author": "llHoYall <hoya128@gmail.com>",
+  "version": "0.1.0",
+  "repository": "https://github.com/llHoYall/hExplorer.git",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "compile": "webpack",
+    "watch": "webpack -w",
+    "lint": "eslint ./src/* ./dist/*",
+    "test": "mocha",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "llhoyall.hexplorer.app",
+    "directories": {
+      "output": "out"
+    },
+    "mac": {
+      "category": "productivity"
+    }
+  },
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "electron": "^2.0.6",
+    "electron-builder": "^20.27.1",
+    "eslint": "^5.3.0",
+    "eslint-plugin-react": "^7.10.0",
+    "mocha": "^5.2.0",
+    "spectron": "^3.8.0",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  },
+  "license": "MIT"
+}
