@@ -4,11 +4,6 @@
 
 HoYa's file explorer application with electron.
 
-## ToDo
-
-- [ ] Create app logo and icon
-- [ ] Render file tree
-
 ## Requirements
 
 - Electron (Spectron, Electron-Builder)
